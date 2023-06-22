@@ -84,5 +84,5 @@ Contributions to the Hackathon Mate Finder project are welcome! If you find a bu
 
 ## License
 
-The Hackathon Mate Finder project is licensed under the [MIT License](LICENSE).
+The Connect project is licensed under the [MIT License](LICENSE).
 
