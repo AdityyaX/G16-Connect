@@ -17,7 +17,7 @@
 <body>
     <section>
         <div id="header">
-            <div class="container">
+            <div class="container" data-aos="fade-in" data-aos-duration="2000">
                 <nav>
                     <a href="landing.html"><img src="logos/logo-no-background.png" alt="logo" class="logo"></a>
                     <ul id="sidemenu">
@@ -36,13 +36,13 @@
                 
             
             </div>
-            <div id="main-text">
+            <div id="main-text" data-aos="fade-in" data-aos-duration="1500">
                 <h1>Connect</h1>
                 <p>Collaborate, Create, Conquer</p>
                 <button><a href="#sign" class="btn">Find a Team</a></button>
             </div>
 
-            <div class="earth">
+            <div class="earth" data-aos="zoom-in" data-aos-duration="3000">
                 <img src="logos/earth.png" alt="earth">
             </div>
             
@@ -55,41 +55,41 @@
 
     <section id="why">
         
-        <div class="why">
+        <div class="why" data-aos="flip-left" data-aos-duration="2000" data-aos-offset="600">
             
             
             <ul>
                 <li>
-                    <div class="why-card">
+                    <div class="why-card" data-aos="fade-right" data-aos-duration="1800">
                         <h1>Seamless collaboration</h1>
                         <p>Connect with people from all over the world and work together to create something amazing.</p>
                 </li>
                 <li>
-                    <div class="why-card">
+                    <div class="why-card" data-aos="fade-left" data-aos-duration="1800">
                         <h1>Find your team</h1>
                         <p>Find people with similar interests and skills to work with.</p>
                     </div>
                 </li>
                 <li>
-                    <div class="why-card">
+                    <div class="why-card" data-aos="fade-right" data-aos-duration="1800">
                         <h1>Build your portfolio</h1>
                         <p>Work on projects and build your portfolio to showcase your skills.</p>
                     </div>
                 </li>
                 <li>
-                    <div class="why-card">
+                    <div class="why-card" data-aos="fade-left" data-aos-duration="1800">
                         <h1>Get inspired</h1>
                         <p>Get inspired by other people's work and learn from them.</p>
                     </div>
                 </li>
                 <li>
-                    <div class="why-card">
+                    <div class="why-card" data-aos="fade-right" data-aos-duration="1800">
                         <h1>Get feedback</h1>
                         <p>Get feedback on your work from other people.</p>
                     </div>
                 </li>
                 <li>
-                    <div class="why-card">
+                    <div class="why-card"data-aos="fade-left" data-aos-duration="1800">
                         <h1>Learn new skills</h1>
                         <p>Learn new skills from other people.</p>
                     </div>
@@ -101,12 +101,12 @@
 
 
     <section id="about">
-        <div class="about">
+        <div class="about" data-aos="slide-up" data-aos-duration="1800">
             <div class="row">
-                <div class="about-col-1">
+                <div class="about-col-1" data-aos="fade-in" data-aos-duration="2000">
                     <img src="logos/logo-white.png" alt="Connect">
                 </div>
-                <div class="about-col-2">
+                <div class="about-col-2" data-aos="fade-right" data-aos-duration="1800">
                     <h1 class="sub-title">About Us</h1>
                     <p id="col">Welcome to Connect!
                         <br>
@@ -170,7 +170,28 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+    AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 300, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
     </script>
     <script src="landing.js"></script>
 
