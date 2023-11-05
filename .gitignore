@@ -4,4 +4,6 @@
 *.pyc
 __pycache__
 db.sqlite3
-# media
+  connect2/db.sqlite3
+     Project/connect/db.sqlite3
+media
